@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Navbar from "./components/NavBar";
+import HeroFold from "./components/HeroFold";
+import BUIDLCrewCTA from "./components/BuildCTA";
+import HowToJoin from "./components/HowToJoin";
+import ContestE from "./components/ContestE";
+import Carsol from "./components/Carsol";
+import Showcase from "./components/Showcase";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <div>
+     <Navbar />
+    <HeroFold/>
+    <BUIDLCrewCTA/>
+    <HowToJoin/>
+    <ContestE/>
+    <Carsol />
+    <Showcase/>
+  </div>;
 }
 
 export default App;
